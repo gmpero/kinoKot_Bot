@@ -5,9 +5,6 @@ import fake_useragent
 user = fake_useragent.UserAgent().random
 header = {'user-agent': user}
 
-user = fake_useragent.UserAgent().random
-header = {'user-agent': user}
-
 # top rating
 url = "https://www.kinoafisha.info/rating/movies/"
 responce = requests.get(url, headers=header).text
